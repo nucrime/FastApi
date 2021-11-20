@@ -1,6 +1,7 @@
+from typing import Optional
+
 from fastapi import FastAPI
 from pydantic import BaseModel
-from typing import Optional
 
 LAST_ITEM = -1
 
@@ -35,4 +36,3 @@ async def read_user(user_id: int):
 @app.delete("/users/{user_id}")
 async def delete_user(user_id: int):
     return db.pop(user_id - 1)
-
