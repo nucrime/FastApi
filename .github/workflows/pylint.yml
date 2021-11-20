@@ -20,4 +20,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint --rcfile=.pylintrc -f parseable --reports=n ${{ secrets.GITHUB_REPOSITORY }}
+        pylint $(git ls-files '*.py')
