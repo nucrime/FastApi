@@ -16,7 +16,7 @@
 ## To run use hypercorn
 ## https://pgjones.gitlab.io/hypercorn/
 # Example
-### hypercorn /controller/dispatcher.py:app --reload
+### hypercorn app/api.py:app --reload
 
 ### Swagger UI available at:
 ### http://localhost:8000/docs
