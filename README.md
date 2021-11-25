@@ -37,6 +37,10 @@ Make sure you are at root directory of the app and seeing something like this
 ```bash
 hypercorn app/api.py:app --reload
 ```
+Or you can use Intellij (Pycharm) to run the app
+![img.png](img.png)
 
 ## Swagger UI available at
 `http://localhost:8000/docs`
+
+Transformers models are available at [Hugging Face site](https://huggingface.co/models)

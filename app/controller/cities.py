@@ -1,14 +1,11 @@
 from fastapi import APIRouter
+from OSMPythonTools.nominatim import Nominatim
 
 router = APIRouter()
 
 
-@router.get("/items/", response_model=schemas.City)
-async def read_city(name: str):
-    # todo retrieve city with its data
-    return [
-        {"id": 1, "name": "Minsk", "country": "Belarus"},
-        {"id": 2, "name": "Pinsk", "country": "Belarus"},
-        {"id": 3, "name": "Riga", "country": "Latvia"},
-        {"id": 4, "name": "Figa", "country": "Karman"},
-    ]
+@router.get("/maps/")
+async def read_maps(name: str):
+    # using name retrieve map objects
+    nominatim = Nominatim()
+    return nominatim.query(name)
