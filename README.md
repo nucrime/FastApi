@@ -12,6 +12,7 @@ pip install -r requirements.txt
 ```
 Initialize migration using alembic
 ```bash
+cd app
 alembic init
 alembic revision -m "init"
 alembic upgrade head
@@ -21,6 +22,7 @@ alembic upgrade head
 
 Or just run the following command once if you have alembic installed and versions of migrations seems to be updated so that you migrate database to create a local sqlite db
 ```bash
+cd app
 alembic upgrade head
 ```
 
@@ -29,6 +31,9 @@ To run the Application you have to use [Gunicorn](https://gunicorn.org)(ASGI)-co
 
 [Hypercorn](https://pgjones.gitlab.io/hypercorn/) is used in below example
 
+Make sure you are at root directory of the app and seeing something like this
+
+`~/FastApi$`
 ```bash
 hypercorn app/api.py:app --reload
 ```
