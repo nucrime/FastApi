@@ -44,3 +44,14 @@ Or you can use Intellij (Pycharm) to run the app
 `http://localhost:8000/docs`
 
 Transformers models are available at [Hugging Face site](https://huggingface.co/models)
+
+**Links:**
+- [FastApi Official site](https://fastapi.tiangolo.com/)
+- [Hugging Face site](https://huggingface.co/)
+- [Transformers installation](https://huggingface.co/transformers/installation.html)
+- [Positive/Negative fine-tuned model](https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english)
+- [Sarcasm fine-tuned model](https://huggingface.co/mrm8488/t5-base-finetuned-sarcasm-twitter)
+- [Hypercorn](https://pgjones.gitlab.io/hypercorn/)
+- [Intellij Pycharm](https://www.jetbrains.com/pycharm/)
+- [pip](https://pip.pypa.io/en/stable/)
+- [requirements.txt](requirements.txt)
